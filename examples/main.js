@@ -7,6 +7,7 @@ import Icon from "../components/lib/icon/index";
 import Button from "../components/lib/button/index";
 import CheckBox from "../components/lib/checkbox/index";
 import CheckBoxGroup from "../components/lib/checkbox-group/index";
+import Input from "../components/lib/input/index";
 
 import router from './router'
 
@@ -14,6 +15,7 @@ import router from './router'
 Vue.use(Demo); // Demo.install -> Vue.component();
 Vue.use(Card);
 Vue.use(Icon);
+Vue.use(Input);
 Vue.use(Button);
 Vue.use(CheckBox);
 Vue.use(CheckBoxGroup);

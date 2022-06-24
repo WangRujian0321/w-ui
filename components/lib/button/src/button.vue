@@ -5,7 +5,7 @@
       :class="styleClass"
       @click="handleClick">
     <span v-if="icon">
-      <w-icon :name="icon"></w-icon>
+      <w_icon :name="icon"></w_icon>
     </span>
     <slot></slot>
   </button>

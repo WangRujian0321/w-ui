@@ -8,7 +8,7 @@
 import "./iconfont.js"
 
 export default {
-  name: "w-icon",
+  name: "w_icon",
   props: {
     name: {
       type: String,
