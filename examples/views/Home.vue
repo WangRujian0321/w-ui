@@ -9,6 +9,9 @@
     <div>
       <a @click="$router.push('/input')">input</a>
     </div>
+    <div>
+      <a @click="$router.push('/radio')">radio</a>
+    </div>
   </div>
 </template>
 

@@ -7,6 +7,7 @@ const Home = () => import ('../examples/views/Home.vue');
 const Button = () => import ('../examples/views/Button.vue');
 const CheckBox = () => import('../examples/views/CheckBox.vue');
 const Input = () => import('../examples/views/Input.vue');
+const Radio = () => import('../examples/views/Radio.vue');
 
 
 const routes = [{
@@ -24,13 +25,17 @@ const routes = [{
         name: 'button',
         component: Button,
     }, {
+        path: '/input',
+        name: 'input',
+        component: Input,
+    },{
         path: '/checkbox',
         name: 'checkbox',
         component: CheckBox,
     },{
-        path: '/input',
-        name: 'input',
-        component: Input,
+        path: '/radio',
+        name: 'radio',
+        component: Radio,
     }]
 }]
 
