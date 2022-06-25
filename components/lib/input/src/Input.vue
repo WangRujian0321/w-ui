@@ -66,13 +66,13 @@ export default {
       get() {
         return this.value;
       },
-      set() {
+      set(value) {
         this.$emit("input", value);
         this.$parent.$emit("validate");
       }
     },
     MyListeners() {
-      return Object.assign(this.$listeners, {
+      return Object.assign({}, this.$listeners, {
         input: event => this.$emit("input", event.target.value)
       })
     },
@@ -101,5 +101,5 @@ export default {
 </script>
 
 <style scoped>
-
+@import "Input.scss";
 </style>

@@ -6,6 +6,7 @@ Vue.use(Router);
 const Home = () => import ('../examples/views/Home.vue');
 const Button = () => import ('../examples/views/Button.vue');
 const CheckBox = () => import('../examples/views/CheckBox.vue');
+const Input = () => import('../examples/views/Input.vue');
 
 
 const routes = [{
@@ -26,6 +27,10 @@ const routes = [{
         path: '/checkbox',
         name: 'checkbox',
         component: CheckBox,
+    },{
+        path: '/input',
+        name: 'input',
+        component: Input,
     }]
 }]
 

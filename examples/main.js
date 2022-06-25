@@ -10,12 +10,14 @@ import CheckBoxGroup from "../components/lib/checkbox-group/index";
 import Input from "../components/lib/input/index";
 
 import router from './router'
+import InputNumber from "../components/lib/input-number";
 
 // Vue.component('name', Demo);
 Vue.use(Demo); // Demo.install -> Vue.component();
 Vue.use(Card);
 Vue.use(Icon);
 Vue.use(Input);
+Vue.use(InputNumber)
 Vue.use(Button);
 Vue.use(CheckBox);
 Vue.use(CheckBoxGroup);

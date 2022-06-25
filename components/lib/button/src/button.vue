@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "w-button",
+  name: "w_button",
   props: {
     type: {
       type: String,

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <w-button type="info">button</w-button>
+    <w_button type="info">button</w_button>
   </div>
 </template>
 
