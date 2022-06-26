@@ -1,11 +1,21 @@
 import Button from "./lib/button";
 import Icon from "./lib/icon";
 import Checkbox from "./lib/checkbox";
+import CheckboxGroup from "./lib/checkbox-group";
+import Message from "./lib/message";
+import Input from "./lib/input";
+import InputNumber from "./lib/input-number";
+import MessageBox from "./lib/message-box";
 
 const componentsList = [
     Button,
     Icon,
-    Checkbox
+    Checkbox,
+    CheckboxGroup,
+    Message,
+    MessageBox,
+    Input,
+    InputNumber,
 ]
 
 const install = function(Vue) {

@@ -11,6 +11,8 @@ import Input from "../components/lib/input/index";
 import InputNumber from "../components/lib/input-number/index";
 import Radio from "../components/lib/radio/index";
 import RadioGroup from "../components/lib/radio-group/index";
+import Message from "../components/lib/message/index";
+import MessageBox from "../components/lib/message-box/index";
 
 import router from './router'
 
@@ -25,6 +27,8 @@ Vue.use(CheckBox);
 Vue.use(CheckBoxGroup);
 Vue.use(Radio);
 Vue.use(RadioGroup);
+Vue.use(MessageBox);
+Vue.use(Message);
 
 Vue.config.productionTip = false
 

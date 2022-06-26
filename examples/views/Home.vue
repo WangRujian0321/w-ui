@@ -12,6 +12,9 @@
     <div>
       <a @click="$router.push('/radio')">radio</a>
     </div>
+    <div>
+      <a @click="$router.push('/message')">message</a>
+    </div>
   </div>
 </template>
 
