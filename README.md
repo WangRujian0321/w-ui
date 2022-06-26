@@ -1,5 +1,7 @@
 # w-ui
 
+类似elementUI的个人UI库，使用Vue2实现
+
 ## Project setup
 ```
 npm install
