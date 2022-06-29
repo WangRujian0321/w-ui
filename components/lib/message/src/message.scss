@@ -9,7 +9,7 @@
   position: fixed;
   z-index: 99999;
   line-height: 20px;
-  transition: top 0.5s;
+  //transition: top 0.5s;
   background-color: #edf2fc;
   padding: 15px 15px 15px 20px;
   display: flex;
@@ -29,7 +29,7 @@
 .message-fade-enter,
 .message-fade-leave-to {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-20px);
 }
 
 .message-fade-enter-active,
