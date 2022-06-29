@@ -33,14 +33,22 @@ export default {
     icon: {
       type: String,
       default:""
+    },
+    size: {
+      type: String,
+      default: "",
+      validator: (value)=>{
+        return ["", "mini", "small", "medium"].includes(value);
+      }
     }
   },
   computed: {
     styleClass() {
       return {
         [`w_button--${this.type}`]: this.type,
+        [`w_button--${this.size}`]: this.size,
         ["is-round"]: this.round,
-        "is-disabled": this.disabled
+        "is-disabled": this.disabled,
       }
     }
   },
