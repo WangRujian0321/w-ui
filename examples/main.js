@@ -13,6 +13,11 @@ import Radio from "../components/lib/radio/index";
 import RadioGroup from "../components/lib/radio-group/index";
 import Message from "../components/lib/message/index";
 import MessageBox from "../components/lib/message-box/index";
+import Modal from "../components/lib/modal/index"
+import Toast from "../components/lib/toast/index";
+import Form from "../components/lib/form/index";
+import FormItem from "../components/lib/form-item/index";
+
 
 import router from './router'
 
@@ -29,6 +34,11 @@ Vue.use(Radio);
 Vue.use(RadioGroup);
 Vue.use(MessageBox);
 Vue.use(Message);
+Vue.use(Modal);
+Vue.use(Toast);
+Vue.use(Form);
+Vue.use(FormItem);
+
 
 Vue.config.productionTip = false
 

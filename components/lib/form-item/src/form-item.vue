@@ -1,0 +1,65 @@
+<template>
+  <div class="w_form-container">
+    <div class="w_form-item">
+
+    </div>
+  </div>
+</template>
+
+<script>
+import schema from "async-validator";
+export default {
+  name: "w_form-item",
+  inject: ["Form"],
+  props: {
+    label: {
+      type: String,
+    },
+    prop: {
+      type: String,
+    }
+  },
+  data() {
+    return {
+      error: "",
+    }
+  },
+  mounted() {
+    this.$on("validate", this.startValidate);
+  },
+  computed: {
+    isRequired() {
+      return (
+          this.prop &&
+          (this.Form.rules[this.prop] || []).some(con => con.required)
+      );
+    }
+  },
+  methods: {
+    startValidate() {
+      let rules = this.Form.rules;
+      let model = this.Form.model;
+
+      let descriptor = rules[this.prop]
+          ? {
+              [`${this.prop}`] : rules[this.prop]
+          }
+          : {};
+      let validator = new schema(descriptor);
+      return validator.validate({
+        [`${this.prop}`] : rules[this.prop]
+      }, (errors, fields)=>{
+        if (errors) {
+          this.error = errors[0].message;
+        } else {
+          this.error = "";
+        }
+      })
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+@import "form-item.scss";
+</style>

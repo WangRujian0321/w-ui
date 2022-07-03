@@ -15,6 +15,12 @@
     <div>
       <a @click="$router.push('/message')">message</a>
     </div>
+    <div>
+      <a @click="$router.push('/toast')">toast</a>
+    </div>
+    <div>
+      <a @click="$router.push('/modal')">modal</a>
+    </div>
   </div>
 </template>
 

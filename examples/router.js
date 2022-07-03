@@ -9,6 +9,8 @@ const CheckBox = () => import('../examples/views/CheckBox.vue');
 const Input = () => import('../examples/views/Input.vue');
 const Radio = () => import('../examples/views/Radio.vue');
 const Message = () => import('../examples/views/Message.vue');
+const Modal = () => import('../examples/views/Modal.vue');
+const Toast = () => import('../examples/views/Toast.vue');
 
 
 const routes = [{
@@ -37,6 +39,18 @@ const routes = [{
         path: '/radio',
         name: 'radio',
         component: Radio,
+    },{
+        path: '/message',
+        name: 'message',
+        component: Message,
+    },{
+        path: '/modal',
+        name: 'modal',
+        component: Modal,
+    },{
+        path: '/toast',
+        name: 'toast',
+        component: Toast,
     },{
         path: '/message',
         name: 'message',

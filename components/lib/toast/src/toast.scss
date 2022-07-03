@@ -1,0 +1,23 @@
+@import "components/css/common.scss";
+
+.mask {
+  @include mask();
+}
+
+.w_toast-content {
+  color: white;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, .8);
+  padding: 10px;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(.5);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s, transform .5s;
+}
