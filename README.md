@@ -1,26 +1,26 @@
-# w-ui
+# w_ui组件库
 
-类似elementUI的个人UI库，使用Vue2实现
+### 快速开始
 
-## Project setup
-```
-npm install
-```
+#### 1. 安装组件库
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+``` bash
+npm i wrj-ui
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### 2. 引用组件库
 
-### Lints and fixes files
-```
-npm run lint
-```
+``` js
+// 全部引入
+import 'wrj-ui/dist/index.css';
+import WUI from 'wrj-ui';
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue.use(WUI);
+
+// 按需引用
+
+import 'wrj-ui/dist/button.css';
+import { Button } from 'wrj-ui';
+Vue.ust(Button);
+
+```

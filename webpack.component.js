@@ -29,7 +29,6 @@ module.exports = {
             amd: 'vue',
         },
     },
-    devtool: "eval",
     entry: list,
     output: {
         filename: '[name].umd.js',

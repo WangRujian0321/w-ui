@@ -1,9 +1,18 @@
 {
-  "name": "w_ui",
+  "name": "wrj-ui",
   "version": "0.1.0",
-  "description": "ElementUI Like UI Library For Vue2",
-  "main": "components/wui.js",
-  "private": true,
+  "description": "基于Vue2制作的类elementUI组件库",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "wrj-ui",
+    "vue2",
+    "UI"
+  ],
+  "author": "axia",
+  "files": [
+    "dist",
+    "components"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
