@@ -2,25 +2,23 @@
   <div class="inline-container">
     <template v-if="type === 'textarea'">
       <textarea
-          class="w-textarea" :disabled="disabled"
+          class="w_textarea" :disabled="disabled"
           v-bind="$attrs" v-on="MyListeners"
           v-model="inputValue"
       ></textarea>
     </template>
     <template v-else>
-      <div class="inline-container">
-        <div class="w_input-prepend" v-if="$slots.prepend">
-          <slot name="prepend"></slot>
-        </div>
-        <div class="w_input-outer">
-          <input type="text" class="w_input" :class="styleClass" :disabled="disabled" v-bind="$attrs" v-on="MyListeners" v-model="inputValue">
-          <span class="w_input-clear" @click="clearInput" v-if="showClear">
+      <div class="w_input-prepend" v-if="$slots.prepend">
+        <slot name="prepend"></slot>
+      </div>
+      <div class="w_input-outer">
+        <input type="text" class="w_input" :class="styleClass" :disabled="disabled" v-bind="$attrs" v-on="MyListeners" v-model="inputValue">
+        <span class="w_input-clear" @click="clearInput" v-if="showClear">
             <w_icon name="chahao"></w_icon>
           </span>
-        </div>
-        <div class="w_input-append" v-if="$slots.append">
-          <slot name="append"></slot>
-        </div>
+      </div>
+      <div class="w_input-append" v-if="$slots.append">
+        <slot name="append"></slot>
       </div>
     </template>
   </div>
