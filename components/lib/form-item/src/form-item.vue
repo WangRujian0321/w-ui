@@ -1,7 +1,7 @@
 <template>
   <div class="w_form-container">
     <div class="w_form-item">
-      <span class="required-star" v-if="isRequired">*</span>
+      <span style="color: red" v-if="isRequired">*</span>
       <label class="w_form-item--label" :style="{width: this.Form.labelWidth}">
         {{label}}
       </label>
@@ -56,7 +56,7 @@ export default {
           : {};
       let validator = new schema(descriptor);
       return validator.validate({
-        [`${this.prop}`] : rules[this.prop]
+        [`${this.prop}`] : model[this.prop]
       }, (errors, fields)=>{
         if (errors) {
           this.error = errors[0].message;
