@@ -1,8 +1,17 @@
 <template>
   <div class="w_form-container">
     <div class="w_form-item">
-
+      <span class="required-star" v-if="isRequired">*</span>
+      <label class="w_form-item--label" :style="{width: this.Form.labelWidth}">
+        {{label}}
+      </label>
+      <slot></slot>
     </div>
+    <transition name="error-fade">
+      <div v-if="error" class="error-tips" :style="{marginLeft: Form.labelWidth}">
+        {{error}}
+      </div>
+    </transition>
   </div>
 </template>
 

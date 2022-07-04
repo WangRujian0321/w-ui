@@ -21,6 +21,9 @@
     <div>
       <a @click="$router.push('/modal')">modal</a>
     </div>
+    <div>
+      <a @click="$router.push('/form')">form</a>
+    </div>
   </div>
 </template>
 

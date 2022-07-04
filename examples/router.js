@@ -11,6 +11,7 @@ const Radio = () => import('../examples/views/Radio.vue');
 const Message = () => import('../examples/views/Message.vue');
 const Modal = () => import('../examples/views/Modal.vue');
 const Toast = () => import('../examples/views/Toast.vue');
+const Form = () => import('../examples/views/Form.vue');
 
 
 const routes = [{
@@ -52,9 +53,9 @@ const routes = [{
         name: 'toast',
         component: Toast,
     },{
-        path: '/message',
-        name: 'message',
-        component: Message,
+        path: '/form',
+        name: 'form',
+        component: Form,
     }]
 }]
 

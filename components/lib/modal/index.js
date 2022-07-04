@@ -1,6 +1,5 @@
 import Modal from "./src/modal.vue";
 
-console.log(Modal);
 
 let w_instance = {
     install(Vue) {
