@@ -19,7 +19,7 @@ export default {
       type: String,
       default: "",
       validator: (value)=>{
-        return ["", "normal", "success", "warning", "danger"].includes(value);
+        return ["", "normal", "success", "warning", "info", "danger"].includes(value);
       }
     },
     disabled: {

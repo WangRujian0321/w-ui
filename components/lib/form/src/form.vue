@@ -26,8 +26,9 @@ export default {
   methods: {
     validate(cb) {
       let promise = this.$children
-          .filter(item=>item.props)
+          .filter(item=>item.prop)
           .map(child => child.startValidate());
+      console.log(this.$children[0].prop)
       Promise.all(promise).then(data=>{
         cb(true);
       }).catch(err=>{

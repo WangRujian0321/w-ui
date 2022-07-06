@@ -55,6 +55,7 @@ export default {
     visible(newValue) {
       if (!newValue) {
         this.$el.addEventListener("animationend", this.destroyElement, false);
+        this.$destroy();
       }
     }
   }

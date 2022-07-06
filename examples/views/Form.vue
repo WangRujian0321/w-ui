@@ -54,34 +54,6 @@
         </w_radio-group>
       </w_form-item>
       <w_form-item
-          label="活动照片"
-          prop="pics"
-      >
-<!--        <w_uploader-->
-<!--            accept="image/png, image/jpeg"-->
-<!--            :size="500 * 1024"-->
-<!--            :limit="3"-->
-<!--            multiple-->
-<!--            dragable-->
-<!--            :show-file-list="true"-->
-<!--            :on-success="uploadSuccess"-->
-<!--            :on-error="uploadError"-->
-<!--        >-->
-<!--          <div-->
-<!--              class="uploadew_area"-->
-<!--              slot="uploadew_area"-->
-<!--          >-->
-<!--            <w_icon name="jia"></w_icon>-->
-<!--            <div class="w_uploadew_-text">将文件拖到此处，或<em>点击上传</em></div>-->
-<!--          </div>-->
-
-<!--          <div-->
-<!--              class="w_uploadew_-tip"-->
-<!--              slot="tip"-->
-<!--          >只能上传jpg/png文件，且不超过500kb</div>-->
-<!--        </w_uploader>-->
-      </w_form-item>
-      <w_form-item
           label="活动形式"
           prop="desc"
       >
