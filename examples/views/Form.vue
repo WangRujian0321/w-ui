@@ -37,6 +37,7 @@
           <w_checkbox label="地推活动"></w_checkbox>
           <w_checkbox label="线下主题活动"></w_checkbox>
         </w_checkbox_group>
+        <p>{{formdata.type}}</p>
       </w_form-item>
       <w_form-item
           label="特殊资源"
@@ -118,17 +119,6 @@ export default {
     };
   },
   methods: {
-    uploadSuccess(data) {
-      console.log("上传成功后传给用户的图片");
-      console.log(data);
-      this.formdata.pics = data;
-    },
-    uploadError(err) {
-      this.$message({
-        message: err,
-        type: "error"
-      });
-    },
     submit() {
       // 表单校验
 
