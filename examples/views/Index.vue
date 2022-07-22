@@ -5,36 +5,36 @@
       <el-container style="height: 100%">
         <el-aside class="el-aside-class">
           <el-menu
-              default-active="0" class="el-menu-vertical-demo"
+              :default-active="active" class="el-menu-vertical-demo"
               router
               @select="handleSelect"
               @open="handleOpen"
               @close="handleClose">
-            <el-menu-item index="0" route="/home">
+            <el-menu-item index="home" route="/home">
               <span slot="title">主页</span>
             </el-menu-item>
-            <el-menu-item index="1" route="/button">
+            <el-menu-item index="button" route="/button">
               <span slot="title">按钮</span>
             </el-menu-item>
-            <el-menu-item index="2" route="/radio">
+            <el-menu-item index="radio" route="/radio">
               <span slot="title">单选框</span>
             </el-menu-item>
-            <el-menu-item index="3" route="/checkbox">
+            <el-menu-item index="checkbox" route="/checkbox">
               <span slot="title">多选框</span>
             </el-menu-item>
-            <el-menu-item index="4" route="/input">
+            <el-menu-item index="input" route="/input">
               <span slot="title">输入框</span>
             </el-menu-item>
-            <el-menu-item index="5" route="/message">
+            <el-menu-item index="message" route="/message">
               <span slot="title">信息框</span>
             </el-menu-item>
-            <el-menu-item index="6" route="/toast">
+            <el-menu-item index="toast" route="/toast">
               <span slot="title">Toast信息框</span>
             </el-menu-item>
-            <el-menu-item index="7" route="/modal">
+            <el-menu-item index="modal" route="/modal">
               <span slot="title">Modal信息框</span>
             </el-menu-item>
-            <el-menu-item index="8" route="/form">
+            <el-menu-item index="form" route="/form">
               <span slot="title">校验表单</span>
             </el-menu-item>
           </el-menu>
@@ -52,7 +52,15 @@ export default {
   name: "Index",
   data() {
     return {
-      isCollapse: true
+      active: "home",
+    }
+  },
+  watch:{
+    $route:{
+      immediate: true,
+      handler(to) {
+        this.active = to.name;
+      }
     }
   },
   methods: {
