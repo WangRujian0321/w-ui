@@ -1,9 +1,13 @@
 <template>
   <div>
-    <w_button
-        type="normal"
-        @click="showModal"
-    >点击我</w_button>
+    <h1>Modal信息框</h1>
+    <p>一种Modal信息框</p>
+    <div>
+      <w_button
+          type="normal"
+          @click="showModal"
+      >点击我</w_button>
+    </div>
   </div>
 </template>
 

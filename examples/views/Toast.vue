@@ -1,9 +1,13 @@
 <template>
   <div>
-    <w_button
-        type="normal"
-        @click="showToast"
-    >点击出现Toast</w_button>
+    <h1>Toast信息框</h1>
+    <p>一种弹出的信息框</p>
+    <div>
+      <w_button
+          type="normal"
+          @click="showToast"
+      >点击出现Toast</w_button>
+    </div>
   </div>
 </template>
 

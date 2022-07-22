@@ -17,6 +17,8 @@ import Modal from "../components/lib/modal/index"
 import Toast from "../components/lib/toast/index";
 import Form from "../components/lib/form/index";
 import FormItem from "../components/lib/form-item/index";
+import ElementUI from "element-ui";
+import 'element-ui/lib/theme-chalk/index.css';
 
 
 import router from './router'
@@ -38,6 +40,7 @@ Vue.use(Modal);
 Vue.use(Toast);
 Vue.use(Form);
 Vue.use(FormItem);
+Vue.use(ElementUI);
 
 
 Vue.config.productionTip = false

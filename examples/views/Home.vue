@@ -1,29 +1,7 @@
 <template>
   <div>
-    <div>
-      <a @click="$router.push('/button')">button</a>
-    </div>
-    <div>
-      <a @click="$router.push('/checkbox')">checkbox</a>
-    </div>
-    <div>
-      <a @click="$router.push('/input')">input</a>
-    </div>
-    <div>
-      <a @click="$router.push('/radio')">radio</a>
-    </div>
-    <div>
-      <a @click="$router.push('/message')">message</a>
-    </div>
-    <div>
-      <a @click="$router.push('/toast')">toast</a>
-    </div>
-    <div>
-      <a @click="$router.push('/modal')">modal</a>
-    </div>
-    <div>
-      <a @click="$router.push('/form')">form</a>
-    </div>
+    <h1>W-UI</h1>
+    <p>基于Vue2完成的类elementUI的组件库</p>
   </div>
 </template>
 

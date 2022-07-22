@@ -12,17 +12,19 @@ const Message = () => import('../examples/views/Message.vue');
 const Modal = () => import('../examples/views/Modal.vue');
 const Toast = () => import('../examples/views/Toast.vue');
 const Form = () => import('../examples/views/Form.vue');
+const Index = () => import('../examples/views/Index.vue');
 
 
 const routes = [{
     path: '/',
-    component: App,
+    component: Index,
     children: [{
         path: '/home',
         redirect: '/',
     },{
         path: '/',
         name: 'home',
+        // redirect: '/button',
         component: Home,
     },{
         path: '/button',
