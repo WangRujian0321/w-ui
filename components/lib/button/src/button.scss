@@ -55,8 +55,8 @@
 
 .w_button--normal:focus,
 .w_button--normal:hover {
-  background: lightblue;
-  border-color: lightblue;
+  background: lightskyblue;
+  border-color: lightskyblue;
 }
 
 .w_button--normal.is-disabled,
@@ -64,8 +64,8 @@
 .w_button--normal.is-disabled:hover,
 .w_button--normal.is-disabled:focus {
   color: white;
-  background-color: azure;
-  border-color: azure;
+  background-color: lightblue;
+  border-color: lightblue;
 }
 
 
@@ -230,4 +230,8 @@
 
 .w_button::-moz-focus-inner {
   border: 0;
+}
+
+.is-round {
+  border-radius: 20px;
 }
