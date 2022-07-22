@@ -14,7 +14,7 @@
       </w_radio-group>
     </div>
     <div style="width:300px">
-      <h1>选择类型</h1>
+      <h1>选择提示内容</h1>
       <w_input v-model="message"></w_input>
     </div>
     <div style="height: 20px"/>
